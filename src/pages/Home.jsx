@@ -26,6 +26,30 @@ export default function Home() {
       <PageTitle />
       <Hero />
 
+      {/* Our Leadership */}
+      <section className="py-14 md:py-20 bg-ttcda-off-white" aria-labelledby="leadership-heading">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+            <div>
+              <h2 id="leadership-heading" className="section-heading">{leadershipPreview.heading}</h2>
+            </div>
+            <Link
+              to={leadershipPreview.cta.path}
+              className="text-sm font-bold text-ttcda-maroon hover:text-ttcda-maroon-light hover:underline"
+            >
+              {leadershipPreview.cta.label} →
+            </Link>
+          </div>
+          <img
+            src={leadershipPreview.groupPhoto.src}
+            alt={leadershipPreview.groupPhoto.alt}
+            loading="eager"
+            decoding="async"
+            className="w-full h-auto rounded-xl border border-gray-200 shadow-sm"
+          />
+        </div>
+      </section>
+
       {/* Who We Are — Telugu */}
       <section className="py-14 md:py-20" aria-labelledby="who-we-are-heading">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
@@ -52,30 +76,6 @@ export default function Home() {
               View full story / పూర్తి కథనాన్ని చూడండి →
             </Link>
           </div>
-        </div>
-      </section>
-
-      {/* Our Leadership */}
-      <section className="py-14 md:py-20 bg-ttcda-off-white" aria-labelledby="leadership-heading">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
-            <div>
-              <h2 id="leadership-heading" className="section-heading">{leadershipPreview.heading}</h2>
-            </div>
-            <Link
-              to={leadershipPreview.cta.path}
-              className="text-sm font-bold text-ttcda-maroon hover:text-ttcda-maroon-light hover:underline"
-            >
-              {leadershipPreview.cta.label} →
-            </Link>
-          </div>
-          <img
-            src={leadershipPreview.groupPhoto.src}
-            alt={leadershipPreview.groupPhoto.alt}
-            loading="eager"
-            decoding="async"
-            className="w-full h-auto rounded-xl border border-gray-200 shadow-sm"
-          />
         </div>
       </section>
 
