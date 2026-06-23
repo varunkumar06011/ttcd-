@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 import MainLayout from './components/MainLayout';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import About from './pages/About';
 import News from './pages/News';
@@ -11,9 +12,11 @@ import Telugu from './pages/Telugu';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<MainLayout />}>
-        <Route index element={<Home />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="members" element={<Members />} />
         <Route path="news" element={<News />} />
@@ -24,6 +27,7 @@ function App() {
         <Route path="*" element={<Home />} />
       </Route>
     </Routes>
+    </>
   );
 }
 
