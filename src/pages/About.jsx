@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import SectionHeader from '../components/SectionHeader';
-import CommitteeCard from '../components/CommitteeCard';
-import { siteMeta, aboutPage, officeBearers, missionItems } from '../data/siteContent';
+import { siteMeta, aboutPage, missionItems } from '../data/siteContent';
 
 export default function About() {
   return (
@@ -71,21 +70,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Office Bearers */}
-      <section id="office-bearers" className="py-14 md:py-20 bg-ttcda-off-white" aria-labelledby="committee-heading">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <SectionHeader
-            title="Office Bearers & Committee"
-            subtitle="Current executive committee of TTCDA."
-            centered
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {officeBearers.map((member) => (
-              <CommitteeCard key={member.id} member={member} />
-            ))}
-          </div>
-        </div>
-      </section>
     </>
   );
 }

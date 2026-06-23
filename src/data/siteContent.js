@@ -368,14 +368,14 @@ export const contact = {
 export const footer = {
   quickLinks: navigation,
   contactSummary: {
-    address: 'Hyderabad, Telangana — 500001',
-    phone: 'Placeholder — +91 40 XXXX XXXX',
-    email: 'placeholder@ttcda.org',
+    address: 'C-301 to 303 & 301A, UPASANA Block, Ahuja Estate, ABIDS, Hyderabad — 500001',
+    phone: '88861 77882',
+    email: 'ttdc.hyderabad@gmail.com',
   },
   socialLinks: [
     { label: 'Facebook', url: 'https://facebook.com', icon: 'facebook' },
     { label: 'Twitter', url: 'https://twitter.com', icon: 'twitter' },
-    { label: 'WhatsApp', url: 'https://wa.me/', icon: 'whatsapp' },
+    { label: 'WhatsApp', url: 'https://wa.me/918886177882', icon: 'whatsapp' },
   ],
   copyright: `© ${new Date().getFullYear()} The Telangana Chemists & Druggists Association. All rights reserved.`,
   bottomText: 'Affiliated to the All India Organisation of Chemists & Druggists (AIOCD).',
@@ -398,7 +398,7 @@ export const homePage = {
 
 export const leadershipPreview = {
   heading: 'Our Leadership',
-  cta: { label: 'View All Office Bearers', path: '/about#office-bearers' },
+  cta: { label: 'View All Office Bearers', path: '/members' },
   groupPhoto: {
     src: '/assets/event-members.png',
     alt: 'TTCDA office bearers group photo',
