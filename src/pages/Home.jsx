@@ -44,6 +44,14 @@ export default function Home() {
               <p key={i} className="leading-relaxed">{p}</p>
             ))}
           </div>
+          <div className="mt-8">
+            <Link
+              to="/telugu"
+              className="inline-flex items-center gap-2 text-sm font-bold text-ttcda-maroon hover:text-ttcda-maroon-light hover:underline"
+            >
+              View full story / పూర్తి కథనాన్ని చూడండి →
+            </Link>
+          </div>
         </div>
       </section>
 
