@@ -483,7 +483,7 @@ export const teluguPage = {
       '/assets/office-interior-2.jpg',
       '/assets/office-interior-3.jpg',
       '/assets/office-interior-4.jpg',
-      '/assets/office-interior-5.svg',
+      '/assets/office-interior-5.jpg',
       '/assets/office-interior-6.jpg',
     ],
   },
