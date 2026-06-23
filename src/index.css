@@ -15,6 +15,11 @@
   a {
     @apply transition-colors duration-200;
   }
+  img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
 }
 
 @layer components {

@@ -40,6 +40,8 @@ export default function Hero() {
               alt={logo.alt}
               width={logo.width}
               height={logo.height}
+              loading="eager"
+              decoding="async"
               className="h-48 w-auto md:h-64 lg:h-80 object-contain"
             />
           </div>

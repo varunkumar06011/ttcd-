@@ -64,6 +64,8 @@ export default function Home() {
           <img
             src={leadershipPreview.groupPhoto.src}
             alt={leadershipPreview.groupPhoto.alt}
+            loading="eager"
+            decoding="async"
             className="w-full h-auto rounded-xl border border-gray-200 shadow-sm"
           />
         </div>

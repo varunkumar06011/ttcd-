@@ -34,6 +34,8 @@ export default function Header() {
               alt={logo.alt}
               width={logo.width}
               height={logo.height}
+              loading="eager"
+              decoding="async"
               className="h-12 w-auto object-contain"
               onError={(e) => {
                 e.target.style.display = 'none';
